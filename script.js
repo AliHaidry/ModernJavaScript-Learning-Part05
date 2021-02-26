@@ -35,3 +35,36 @@ doTheNextThing(); // Doesn't have to wait until posts load.
 /************************************ */
 /** What Is Asynchronous Programming? --- END */
 /************************************ */
+
+
+
+/** Browser / Server APIs */
+/**  
+ * Most Async code you work with will be part of an API or library.
+ * XMLHttpRequest & Fetch
+ * jQuery Ajax, Axios, other HTTP libraries
+ * Node.js fs (filesystem) module
+*/
+
+/** END */
+
+
+/** Handling Async Code */
+/** 
+ * Callbacks
+ * Promises
+ * Async / Await
+*/
+/** END */
+
+// Ajax, which actually stands for Asynchronous JavaScript and XML.
+
+
+/** What is Ajax */
+/** 
+ * Asynchronous JavaScript & XML
+ * Set of web technologies
+ * Send & Recieve data asynchronously
+ * Does not interfere with the current page
+ * JSON has replaced XML for the most part
+*/
