@@ -1,6 +1,48 @@
 document.getElementById('button1').addEventListener
 ('click',loadCustomer);
 
+
+document.getElementById('button2').addEventListener
+('click',loadCustomers);
+
+
+
+/** Load Customers */
+function loadCustomers(e)
+{
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET','customers.json',true); // true for asynchronous.
+
+    xhr.onload = function() {
+        if(this.status === 200)
+        {
+         //   console.log(this.responseText);
+         const customers = JSON.parse(this.responseText);
+
+         let output = '';
+
+         customers.forEach(function(customer){
+        output += `
+         <ul>
+            <li>ID: ${customer.id}</li>
+            <li>ID: ${customer.name}</li>
+            <li>ID: ${customer.company}</li>
+            <li>ID: ${customer.phone}</li>
+        </ul>
+         `;
+        });
+
+
+         document.getElementById('customers').innerHTML = output;
+        }
+    }
+    xhr.send();
+}
+
+
+/** Load Customer */
+
 function loadCustomer()
 {
     const xhr = new XMLHttpRequest();
