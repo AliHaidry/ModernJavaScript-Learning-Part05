@@ -16,6 +16,29 @@ sayGreet();
 
 
 /** Arrow function more compact example */
+// One line function does not need braces.
 const bye = () => console.log("Nice to meet you!");
 
 bye();
+
+/** Arrow function with string example */
+// One line returns.
+const sayHelloOne = () => 'Hello my friend';
+
+console.log(sayHelloOne());
+
+/** Arrow function with object literal example */
+// Return Object.
+const sayHelloTwo = () => ({msg: 'Hello my friend you are awesome'});
+
+console.log(sayHelloTwo());
+
+/** Arrow function with parameter example */
+// single parameter does not need parenthesis.
+const sayHelloThree = name => console.log(`Hello ${name}`);
+sayHelloThree('Brad');
+
+
+// Multiple parameters need parenthesis.
+const sayHelloFour = (firstName, lastName) => console.log(`Hello ${firstName} ${lastName}`);
+sayHelloFour('Brad','John');
