@@ -57,3 +57,9 @@ const nameNewLengths = newUsers.map((newName) => {
     return newName.length;
 });
 console.log(nameNewLengths);
+
+/** Array of users with arrow function with simplest way */
+const myFriends = ['John', 'Jimmy', 'William'];
+
+const myFriendsLengths = myFriends.map(myFriendsName => myFriendsName.length );
+console.log(myFriendsLengths);
