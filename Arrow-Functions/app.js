@@ -42,3 +42,18 @@ sayHelloThree('Brad');
 // Multiple parameters need parenthesis.
 const sayHelloFour = (firstName, lastName) => console.log(`Hello ${firstName} ${lastName}`);
 sayHelloFour('Brad','John');
+
+
+/** Array of users with simple function */
+const users = ['Ali', 'John', 'Mady'];
+const nameLengths = users.map(function(name) {
+    return name.length;
+});
+console.log(nameLengths);
+
+/** Array of users with arrow function */
+const newUsers = ['John', 'Mady', 'William'];
+const nameNewLengths = newUsers.map((newName) => {
+    return newName.length;
+});
+console.log(nameNewLengths);
